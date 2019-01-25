@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Elena Mikirtumova](https://up.htmlacademy.ru/htmlcss/24/user/918643).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Балабанович](https://htmlacademy.ru/profile/balabanovich).
 
 ---
 
