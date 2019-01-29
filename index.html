@@ -15,27 +15,33 @@
         <input class="search-field" id="search-box" type="search" name="search" placeholder="Поиск по сайту">
         <button class="search-button" type="submit">Найти</button>
       </form>
-      <ul class="user-nav">
+      <ul class="header-user-nav">
         <li><a class="login-link" href="account.html">Войти</a></li>
       </ul>
       <a class="main-header-compare" href="compare-list.html">Сравнить</a>
       <a class="main-header-cart" href="cart.html">Корзина</a>
       <nav class="site-nav">
-        <ul class="site-nav-list">
-          <li>
-            <a class="catalog-link" href="catalog.html">Каталог товаров</a>
-            <ul class="catalog-list">
+        <div class="site-nav-catalog">
+          <a class="site-nav-link" href="catalog.html">Каталог товаров</a>
+          <div class="site-nav-submenu">
+            <ul class="submenu-list">
               <li><a href="virtual-reality.html">Виртуальная реальность</a></li>
               <li><a href="monopods.html">Моноподы для селфи</a></li>
               <li><a href="cameras.html">Экшн-камеры</a></li>
+            </ul>
+            <ul class="submenu-list">
               <li><a href="bracelets.html">Фитнес-браслеты</a></li>
               <li><a href="smartwatch.html">Умные часы</a></li>
+            </ul>
+            <ul class="submenu-list">
               <li><a href="quadcopters.html">Квадрокоптеры</a></li>
             </ul>
-          </li>
-          <li><a class="delivery" href="delivery.html">Доставка</a></li>
-          <li><a class="guarantee" href="guarantee.html">Гарантия</a></li>
-          <li><a class="contacts" href="contacts.html">Контакты</a></li>
+          </div>
+        </div>
+        <ul class="site-nav-company">
+          <li><a class="site-nav-link" href="delivery.html">Доставка</a></li>
+          <li><a class="site-nav-link" href="guarantee.html">Гарантия</a></li>
+          <li><a class="site-nav-link" href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -139,13 +145,13 @@
       <a class="main-footer-logo">
         <img src="img/index-logo-footer.svg" width="163" height="35" alt="Логотип интернет-магазина «Девайс»">
       </a>
-      <ul class="user-nav">
+      <ul class="footer-user-nav">
         <li><a class="login-link" href="account.html">Войти</a></li>
       </ul>
       <a class="main-footer-compare" href="compare-list.html">Сравнить</a>
       <a class="main-footer-cart" href="cart.html">Корзина</a>
       <p class="main-footer-address">г. Москва, ул. Строителей, 15</p>
-      <ul class="site-nav">
+      <ul class="footer-site-nav">
         <li><a class="site-nav-link" href="delivery.html">Доставка</a></li>
         <li><a class="site-nav-link" href="guarantee.html">Гарантия</a></li>
         <li><a class="site-nav-link" href="contacts.html">Контакты</a></li>
