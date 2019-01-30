@@ -49,8 +49,50 @@
     <main>
       <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
       <section class="promo-slider">
-        <h2 class="visually-hidden">Популярный товар</h2>
-        <!--Здесь будет слайдер-->
+        <h2 class="visually-hidden">Популярные товары</h2>
+        <input class="visually-hidden" type="radio" id="promo-slider-1" name="toggle-1" checked>
+        <input class="visually-hidden" type="radio" id="promo-slider-2" name="toggle-1">
+        <input class="visually-hidden" type="radio" id="promo-slider-3" name="toggle-1">
+        <div class="promo-slider-controls">
+          <label for="promo-slider-1">01</label>
+          <label for="promo-slider-2">02</label>
+          <label for="promo-slider-3">03</label>
+        </div>
+        <ul class="promo-slider-list">
+          <li class="promo-slider-item">
+            <h3 class="slide-title">Делай селфи, как Бен Стиллер!</h3>
+            <p class="slide-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <a class="button-yellow" href="popular-item-1.html">Подробнее</a>
+            <dl class="slide-item-features">
+              <dt class="feature-name">Длина палки</dt>
+              <dd class="feature-description">8,5 м</dd>
+              <dt class="feature-name">Вес палки</dt>
+              <dd class="feature-description">5 кг</dd>
+              <dt class="feature-name">Материал</dt>
+              <dd class="feature-description">Карбон</dd>
+            </dl>
+          </li>
+          <li class="promo-slider-item">
+            <h3 class="slide-title">Худеем правильно!</h3>
+            <p class="slide-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <a class="button-yellow" href="popular-item-2.html">Подробнее</a>
+            <dl class="slide-item-features">
+              <dt class="feature-name">Без подзарядки</dt>
+              <dd class="feature-description">48 часов</dd>
+            </dl>
+          </li>
+          <li class="promo-slider-item">
+            <h3 class="slide-title">Порхает как бабочка, жалит как пчела!</h3>
+            <p class="slide-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <a class="button-yellow" href="popular-item-3.html">Подробнее</a>
+            <dl class="slide-item-features">
+              <dt class="feature-name">Дальность полета</dt>
+              <dd class="feature-description">800 м</dd>
+              <dt class="feature-name">Радиус поражения</dt>
+              <dd class="feature-description">50 м</dd>
+            </dl>
+          </li>
+        </ul>
       </section>
       <section class="catalog-sections">
         <h2 class="visually-hidden">Разделы каталога товаров</h2>
@@ -95,7 +137,7 @@
       </section>
       <section class="services-slider">
         <h2 class="visually-hidden">Сервисы интернет-магазина</h2>
-        <input class="visually-hidden" type="radio" id="service-1" name="toggle-2">
+        <input class="visually-hidden" type="radio" id="service-1" name="toggle-2" checked>
         <input class="visually-hidden" type="radio" id="service-2" name="toggle-2">
         <input class="visually-hidden" type="radio" id="service-3" name="toggle-2">
         <div class="services-slider-controls">
@@ -106,16 +148,16 @@
         <ul class="services-slider-list">
           <li class="services-slider-item" id="slide-1">
             <h3 class="slide-title">Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            <p class="slide-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </li>
           <li class="services-slider-item" id="slide-2">
             <h3 class="slide-title">Гарантия</h3>
-            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.</p>
-            <p>Товар, не дом, конечно же.</p>
+            <p class="slide-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.</p>
+            <p class="slide-text">Товар, не дом, конечно же.</p>
           </li>
           <li class="services-slider-item" id="slide-3">
             <h3 class="slide-title">Кредит</h3>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            <p class="slide-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
           </li>
         </ul>
       </section>
