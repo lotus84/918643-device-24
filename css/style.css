@@ -288,3 +288,75 @@ a {
 
   list-style: none;
 }
+
+/*--- Стилизация <footer> на главной странице ---*/
+
+.main-footer {
+  color: #ffffff;
+  background-color: #464646;
+}
+
+.main-footer a {
+  color: #ffffff;
+}
+
+.main-footer-logo:hover,
+.main-footer-logo:focus {
+  opacity: 0.6;
+}
+
+.main-footer-logo:active {
+  opacity: 0.3;
+}
+
+.footer-user-nav {
+  list-style: none;
+}
+
+.main-footer-top a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-footer-top a:hover,
+.main-footer-top a:focus {
+  color: #ffffff;
+}
+
+.main-footer-top a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-site-nav {
+  list-style: none;
+}
+
+.footer-site-nav .site-nav-link {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+  text-align: left;
+}
+
+.footer-site-nav .site-nav-link:hover,
+.footer-site-nav .site-nav-link:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-site-nav .site-nav-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.main-footer-socials {
+  list-style: none;
+}
+
+.logo-html-link:hover img,
+.logo-html-link:focus img {
+  opacity: 0.6;
+}
+
+.logo-html-link:active img {
+  opacity: 0.3;
+} 
