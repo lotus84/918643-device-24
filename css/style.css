@@ -29,3 +29,88 @@
   font-weight: 800;
   font-style: normal;
 }
+
+body {
+  margin: 0;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*--- Стилизация <header> на главной странице ---*/
+
+.main-header {
+  color: #000000;
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+.main-header a {
+  color: #000000;
+}
+
+.main-header a:hover,
+.main-header a:focus {
+  opacity: 0.6;
+}
+
+.main-header a:active {
+  opacity: 0.3;
+}
+
+.search-button {
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  color: #000000;
+
+  background-color: rgba(240, 197, 46, 0.5);
+  border: 2px solid #000000;
+
+  cursor: pointer;
+}
+
+.search-button:hover,
+.search-button:focus {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.search-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #000000;
+}
+
+.header-user-nav {
+  list-style: none;
+}
+
+.site-nav {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+}
+
+.submenu-list {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 300;
+  text-transform: none;
+
+  list-style: none;
+}
+
+.site-nav-company {
+  list-style: none;
+}
