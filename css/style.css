@@ -101,6 +101,10 @@ a {
   text-transform: uppercase;
 }
 
+.site-nav .site-nav-link {
+  letter-spacing: 3.6px;
+}
+
 .submenu-list {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
@@ -112,5 +116,175 @@ a {
 }
 
 .site-nav-company {
+  list-style: none;
+}
+
+/*--- Стилизация <main> на главной странице ---*/
+
+.promo-slider-list {
+  list-style: none;
+}
+
+.promo-slider-item .slide-counter {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 180px;
+  line-height: 180px;
+  font-weight: 800;
+
+  color: #ffffff;
+  background-color: rgba(240, 197, 46, 0.5); /*временно*/
+}
+
+.promo-slider-item .slide-title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  font-weight: 800;
+
+  color: #000000;
+}
+
+.promo-slider-item .slide-text {
+  text-align: left;
+}
+
+.button-yellow {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: 3.6px;
+
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+}
+
+.button-yellow:hover,
+.button-yellow:focus {
+  color: #000000;
+  background-color: #f0c52e;
+}
+
+.button-yellow:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #f0c52e;
+}
+
+.slide-item-features .feature-name {
+  font-size: 13px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.slide-item-features .feature-description {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 300;
+}
+
+.catalog-sections .sections-list {
+  list-style: none;
+}
+
+.section-item h3 {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+  text-align: left;
+}
+
+.section-item img {
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+.section-item:hover img,
+.section-item:focus img {
+  background-color: #f0c52e;
+}
+
+.section-item:active img {
+  opacity: 0.3;
+  background-color: #f0c52e;
+}
+
+.section-item:active h3 {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.services-slider {
+  background-color: #e5e5e5;
+}
+
+.services-slider-button:active {
+  color: #f7e184;
+  background-color: #000000;
+}
+
+.services-slider-list {
+  list-style: none;
+}
+
+.services-slider-item .slide-title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 800;
+  color: #000000;
+  text-align: left;
+}
+
+.brands-list {
+  list-style: none;
+}
+
+.brand-item-1:hover img {
+  background-image: url("../img/logo-1-1.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.brand-item-2:hover img {
+  background-image: url("../img/logo-2-1.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.brand-item-3:hover img {
+  background-image: url("../img/logo-3-1.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.brand-item-4:hover img {
+  background-image: url("../img/logo-4-1.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.company-info h2,
+.company-contact h2 {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 800;
+  color: #000000;
+  text-align: left;
+}
+
+.company-info .transport-list {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 800;
+  color: #000000;
+  text-align: left;
+
   list-style: none;
 }
