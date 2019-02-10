@@ -309,6 +309,240 @@ a {
   list-style: none;
 }
 
+/*--- Стилизация <main> на странице каталога ---*/
+
+.catalog-page .page-title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 800;
+  color: #000000;
+  text-align: left;
+}
+
+.catalog-page .breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumbs .breadcrumbs-current:hover,
+.breadcrumbs .breadcrumbs-current:focus,
+.breadcrumbs .breadcrumbs-current:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.filters-title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: 3.2px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.filter-form-item {
+  border: none;
+}
+
+.filter-form-item legend {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+  text-align: left;
+}
+
+.price-controls label {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.price-controls input[value] {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.filter-list {
+  list-style: none;
+}
+
+.filter-option label {
+  font-size: 14px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.filter-input:disabled + label {
+  color: #a6a6a6;
+}
+
+.sort-title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: 3.2px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.sort-kind {
+  list-style: none;
+}
+
+.sort-kind a {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sort-kind a:hover,
+.sort-kind a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sort-kind a:active {
+  color: #000000;
+}
+
+.sort-kind .sort-price-current {
+  color: #000000;
+}
+
+.sort-kind .sort-price-current:hover,
+.sort-kind .sort-price-current:focus,
+.sort-kind .sort-price-current:active {
+  color: #000000;
+}
+
+.sort-updown {
+  list-style: none;
+}
+
+.catalog .catalog-list {
+  list-style: none;
+}
+
+.catalog-item-actions .button-compare {
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.catalog-item-actions .button-compare:hover,
+.catalog-item-actions .button-compare:focus {
+  color: #000000;
+}
+
+.catalog-item-actions .button-compare:active {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.catalog-item .item-title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+  text-align: left;
+}
+
+.catalog-item .item-price {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #464646;
+  text-align: right;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-prev a,
+.pagination-next a {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 3.2px;
+  color: #000000;
+  text-align: left;
+  background-color: #ebebeb;
+}
+
+.pagination-prev a:hover,
+.pagination-prev a:focus,
+.pagination-next a:hover,
+.pagination-next a:focus {
+  background-color: #d9d9d9;
+}
+
+.pagination-prev a:active,
+.pagination-next a:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #d9d9d9;
+}
+
+.pagination-item a {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 3.2px;
+  color: rgba(0, 0, 0, 0.3);
+  text-align: left;
+  background-color: #ebebeb;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination-item a:active {
+  color: #000000;
+}
+
+.pagination-item-current a {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 3.2px;
+  color: #000000;
+  text-align: left;
+  background-color: #ebebeb;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: #000000;
+}
+
 /*--- Стилизация <footer> на главной странице ---*/
 
 .main-footer {
