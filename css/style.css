@@ -306,6 +306,35 @@ a {
   margin-left: 104px;
 }
 
+/*--- Стилизация <header> на странице каталога ---*/
+
+.header-user-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-user-nav .user-account {
+  display: block;
+
+  margin-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 0px;
+}
+
+.header-user-nav .logout-link {
+  display: block;
+
+  margin-right: 65px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+  color: rgba(0, 0, 0, 0.3);
+}
+
 /*--- Стилизация <main> на главной странице ---*/
 
 .section-container {
