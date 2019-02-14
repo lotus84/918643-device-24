@@ -308,21 +308,79 @@ a {
 
 /*--- Стилизация <main> на главной странице ---*/
 
+.section-container {
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.promo-slider {
+  position: relative;
+}
+
+.promo-slider-controls {
+  position: absolute;
+  top: 300px;
+  right: 80px;
+}
+
 .promo-slider-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
+.promo-slider-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  min-height: 486px;
+}
+
+.promo-slider-image {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  width: 600px;
+}
+
+.promo-slider-image img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.promo-slider-wrapper {
+  position: relative;
+
+  width: 560px;
+}
+
 .promo-slider-item .slide-counter {
+  position: absolute;
+  top: -240px;
+  right: 48px;
+
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 180px;
   line-height: 180px;
   font-weight: 800;
 
   color: #ffffff;
-  background-color: rgba(240, 197, 46, 0.5); /*временно*/
+  background-color: gray; /*временно*/
+  display: none; /*временно*/
 }
 
 .promo-slider-item .slide-title {
+  margin: 0;
+  padding: 0;
+
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
   line-height: 56px;
@@ -331,8 +389,36 @@ a {
   color: #000000;
 }
 
+.promo-slider-item .slide-title-first {
+  width: 394px;
+
+  margin-bottom: 30px;
+}
+
+.promo-slider-item .slide-title-second {
+  width: 258px;
+
+  margin-bottom: 30px;
+}
+
 .promo-slider-item .slide-text {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+
   text-align: left;
+}
+
+.promo-slider-item .slide-text-first {
+  width: 480px;
+}
+
+.promo-slider-item .slide-text-second {
+  width: 440px;
+}
+
+.promo-slider-item .slide-text-third {
+  width: 450px;
 }
 
 .button-yellow {
@@ -361,6 +447,18 @@ a {
   background-color: #f0c52e;
 }
 
+.slide-item-features {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 40px;
+}
+
+.item-features-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .slide-item-features .feature-name {
   font-size: 13px;
   line-height: 20px;
@@ -368,6 +466,9 @@ a {
 }
 
 .slide-item-features .feature-description {
+  margin: 0;
+  margin-right: 80px;
+
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 36px;
   line-height: 48px;
@@ -375,10 +476,45 @@ a {
 }
 
 .catalog-sections .sections-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
+.sections-list .section-item {
+  display: block;
+  width: 160px;
+}
+
+.section-item-image {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  min-height: 160px;
+
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+.section-item-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
 .section-item h3 {
+  margin: 0;
+  margin-top: 36px;
+  padding: 0;
+
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -387,18 +523,17 @@ a {
   text-align: left;
 }
 
-.section-item img {
-  background-color: rgba(240, 197, 46, 0.5);
+.section-item:hover .section-item-image,
+.section-item:focus .section-item-image {
+  background-color: #f0c52e;
 }
 
-.section-item:hover img,
-.section-item:focus img {
+.section-item:active .section-item-image {
   background-color: #f0c52e;
 }
 
 .section-item:active img {
   opacity: 0.3;
-  background-color: #f0c52e;
 }
 
 .section-item:active h3 {
@@ -406,7 +541,26 @@ a {
 }
 
 .services-slider {
+  margin-bottom: 94px;
   background-color: #e5e5e5;
+}
+
+.services-slider-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services-slider-controls {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  width: 278px;
 }
 
 .services-slider-button:active {
@@ -415,10 +569,18 @@ a {
 }
 
 .services-slider-list {
+  width: 760px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .services-slider-item .slide-title {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
   line-height: 48px;
@@ -427,7 +589,24 @@ a {
   text-align: left;
 }
 
+.services-slider-item .slide-text {
+  margin: 0;
+  padding: 0;
+
+  width: 426px;
+}
+
+.popular-brands {
+  margin-bottom: 152px;
+}
+
 .brands-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -459,8 +638,22 @@ a {
   background-position: 0 0;
 }
 
+.company-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.company-info {
+  width: 560px;
+}
+
 .company-info h2,
 .company-contact h2 {
+  margin: 0;
+  margin-bottom: 58px;
+  padding: 0;
+
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
   line-height: 48px;
@@ -469,7 +662,21 @@ a {
   text-align: left;
 }
 
+.company-info p {
+  width: 472px;
+
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
 .company-info .transport-list {
+  margin: 0;
+  margin-top: 56px;
+  margin-bottom: 70px;
+  padding: 0;
+  padding-left: 40px;
+
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   line-height: 40px;
@@ -478,6 +685,23 @@ a {
   text-align: left;
 
   list-style: none;
+}
+
+.company-contact {
+  width: 560px;
+}
+
+.company-contact p {
+  width: 512px;
+
+  margin: 0;
+  margin-bottom: 44px;
+  padding: 0;
+}
+
+.company-contact img {
+  display: block;
+  margin-bottom: 70px;
 }
 
 /*--- Стилизация <main> на странице каталога ---*/
