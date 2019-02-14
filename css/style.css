@@ -941,12 +941,29 @@ a {
 /*--- Стилизация <footer> на главной странице ---*/
 
 .main-footer {
+  margin-top: 98px;
+  padding-top: 64px;
+
   color: #ffffff;
   background-color: #464646;
 }
 
+.main-footer-container {
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .main-footer a {
   color: #ffffff;
+}
+
+.main-footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-bottom: 40px;
 }
 
 .main-footer-logo:hover,
@@ -958,8 +975,32 @@ a {
   opacity: 0.3;
 }
 
+.footer-top-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
 .footer-user-nav {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.footer-user-nav .login-link {
+  display: block;
+
+  margin-right: 40px;
+  padding-left: 28px;
+}
+
+.footer-top-wrapper .main-footer-compare {
+  margin-right: 40px;
+  padding-left: 28px;
+}
+
+.footer-top-wrapper .main-footer-cart {
+  padding-left: 28px;
 }
 
 .main-footer-top a {
@@ -975,17 +1016,43 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.main-footer-middle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-bottom: 70px;
+}
+
+.main-footer-address {
+  margin: 0;
+  padding: 0;
+}
+
 .footer-site-nav {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .footer-site-nav .site-nav-link {
+  display: block;
+  margin-right: 38px;
+
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
   letter-spacing: 3.6px;
   text-align: left;
+}
+
+.footer-site-nav .site-nav-link-last {
+  margin-right: 0;
 }
 
 .footer-site-nav .site-nav-link:hover,
@@ -997,8 +1064,28 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.main-footer-phone {
+  margin: 0;
+  padding: 0;
+}
+
+.main-footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
 .main-footer-socials {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.logo-html-link {
+  margin-left: 484px;
 }
 
 .logo-html-link:hover img,
