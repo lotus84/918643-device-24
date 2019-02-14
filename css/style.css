@@ -1127,6 +1127,28 @@ a {
   opacity: 0.3;
 }
 
+/*--- Стилизация <footer> на странице каталога ---*/
+
+.footer-user-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-user-nav .user-account {
+  display: block;
+
+  margin-right: 20px;
+  padding-left: 28px;
+}
+
+.footer-user-nav .logout-link {
+  display: block;
+
+  margin-right: 44px;
+
+  color: rgba(255, 255, 255, 0.3);
+}
+
 /*--- Стилизация модальных окон ---*/
 
 .modal-message {
