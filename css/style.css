@@ -735,7 +735,21 @@ a {
 
 /*--- Стилизация <main> на странице каталога ---*/
 
+.page-title-wrapper {
+  box-sizing: border-box;
+
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 60px;
+}
+
 .catalog-page .page-title {
+  margin: 0;
+  margin-top: 44px;
+  margin-bottom: 28px;
+  padding: 0;
+
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
   line-height: 48px;
@@ -745,6 +759,13 @@ a {
 }
 
 .catalog-page .breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  margin-bottom: 48px;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -769,7 +790,41 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.filters-title {
+.catalog-page-container {
+  background-image: 
+    linear-gradient(to right, #ebebeb 28%, transparent 28%),
+    linear-gradient(to right, transparent 28%, #ebebeb 28%),
+    linear-gradient(to right, #d9d9d9 28%, transparent 28%);
+  background-size: 
+    100% 100%,
+    100% 70px,
+    100% 70px;
+  background-position: 
+    0 70px, 
+    0 0,
+    0 0;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+}
+
+.page-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-top .filters-title {
+  margin: 0;
+  padding: 0;
+  padding-top: 24px;
+  padding-bottom: 22px;
+  padding-left: 60px;
+
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -778,6 +833,105 @@ a {
   letter-spacing: 3.2px;
   text-align: left;
   text-transform: uppercase;
+}
+
+.page-top .sort-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.page-top .sort-title {
+  margin: 0;
+  margin-right: 55px;
+  padding: 0;
+  padding-top: 24px;
+  padding-bottom: 22px;
+  padding-left: 74px;
+
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: 3.2px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.sort-kind {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sort-kind a {
+  display: block;
+
+  padding-top: 26px;
+  padding-bottom: 26px;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sort-kind a:hover,
+.sort-kind a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sort-kind a:active {
+  color: #000000;
+}
+
+.sort-kind .sort-price {
+  margin-right: 28px;
+}
+
+.sort-kind .sort-type {
+  margin-right: 30px;
+}
+
+.sort-kind .sort-price-current {
+  color: #000000;
+}
+
+.sort-kind .sort-price-current:hover,
+.sort-kind .sort-price-current:focus,
+.sort-kind .sort-price-current:active {
+  color: #000000;
+}
+
+.sort-updown {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+
+  width: 1160px;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-bottom .filter-form {
+  box-sizing: border-box;
+
+  width: 268px;
 }
 
 .filter-form-item {
@@ -805,6 +959,14 @@ a {
   color: rgba(0, 0, 0, 0.2);
 }
 
+.price-controls input[name=price-min],
+.price-controls input[name=price-max] {
+  box-sizing: border-box;
+  width: 90px;
+  background-color: #ebebeb;
+  border: none;
+}
+
 .filter-list {
   list-style: none;
 }
@@ -819,51 +981,23 @@ a {
   color: #a6a6a6;
 }
 
-.sort-title {
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 800;
-  color: #000000;
-  letter-spacing: 3.2px;
-  text-align: left;
-  text-transform: uppercase;
-}
+.page-bottom .catalog {
+  box-sizing: border-box;
 
-.sort-kind {
-  list-style: none;
-}
+  padding-top: 70px;
+  padding-left: 74px;
 
-.sort-kind a {
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.sort-kind a:hover,
-.sort-kind a:focus {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.sort-kind a:active {
-  color: #000000;
-}
-
-.sort-kind .sort-price-current {
-  color: #000000;
-}
-
-.sort-kind .sort-price-current:hover,
-.sort-kind .sort-price-current:focus,
-.sort-kind .sort-price-current:active {
-  color: #000000;
-}
-
-.sort-updown {
-  list-style: none;
+  width: 892px;
 }
 
 .catalog .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0; 
   list-style: none;
 }
 
@@ -902,19 +1036,34 @@ a {
 }
 
 .pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  margin-bottom: 76px;
+  padding: 0;
   list-style: none;
+
+  background-color: #ebebeb;
 }
 
 .pagination-prev a,
 .pagination-next a {
+  display: block;
+
+  box-sizing: border-box;
+
+  width: 136px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 800;
   letter-spacing: 3.2px;
   color: #000000;
-  text-align: left;
-  background-color: #ebebeb;
+  text-align: center;
 }
 
 .pagination-prev a:hover,
@@ -931,6 +1080,14 @@ a {
 }
 
 .pagination-item a {
+  display: block;
+
+  box-sizing: border-box;
+
+  margin-right: 30px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -938,7 +1095,6 @@ a {
   letter-spacing: 3.2px;
   color: rgba(0, 0, 0, 0.3);
   text-align: left;
-  background-color: #ebebeb;
 }
 
 .pagination-item a:hover,
@@ -958,13 +1114,20 @@ a {
   letter-spacing: 3.2px;
   color: #000000;
   text-align: left;
-  background-color: #ebebeb;
 }
 
 .pagination-item-current a:hover,
 .pagination-item-current a:focus,
 .pagination-item-current a:active {
   color: #000000;
+}
+
+.pagination-item-first {
+  margin-left: auto;
+}
+
+.pagination-item-last {
+  margin-right: auto;
 }
 
 /*--- Стилизация <footer> на главной странице ---*/
@@ -1128,6 +1291,10 @@ a {
 }
 
 /*--- Стилизация <footer> на странице каталога ---*/
+
+.main-footer-catalog {
+  margin-top: 0;
+}
 
 .footer-user-nav {
   display: flex;
