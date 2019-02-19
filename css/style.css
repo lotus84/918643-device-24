@@ -348,7 +348,6 @@ input[type="radio"].visually-hidden {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-
 .site-nav-catalog::after {
   content: "";
 
@@ -367,7 +366,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 40px;
-  z-index: 20;
+  z-index: 10;
 
   background-color: #f7e296;
 }
@@ -376,7 +375,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
 
-  width: 1000px;
+  width: 1040px;
   padding-bottom: 38px;
 }
 
@@ -472,8 +471,51 @@ input[type="radio"].visually-hidden {
 
 .promo-slider-controls {
   position: absolute;
-  top: 300px;
+  top: 224px;
   right: 80px;
+}
+
+.promo-slider-controls .promo-slider-button {
+  position: relative;
+
+  width: 22px;
+  height: 22px;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.promo-slider-controls .promo-slider-button::before {
+  content: "";
+
+  position: absolute;
+  top: 2px;
+  left: 2px;
+
+  width: 12px;
+  height: 12px;
+
+  background-color: transparent;
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+
+.promo-slider-controls .active::after {
+  content: "";
+
+  position: absolute;
+  top: 6px;
+  left: 6px;
+
+  width: 4px;
+  height: 4px;
+  border: 1px solid #000000;
+  border-radius: 50%;
 }
 
 .promo-slider-list {
@@ -484,6 +526,14 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-slider-item {
+  display: none;
+}
+
+.promo-slider-item:nth-child(1) {
+  display: block;
+}
+
+.promo-slider-item .item-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -493,6 +543,7 @@ input[type="radio"].visually-hidden {
 
 .promo-slider-image {
   position: relative;
+  top: -100px;
 
   margin: 0;
   padding: 0;
@@ -510,13 +561,27 @@ input[type="radio"].visually-hidden {
 
 .promo-slider-wrapper {
   position: relative;
+  top: -32px;
 
   width: 560px;
 }
 
+.promo-slider-wrapper::before {
+  content: "";
+
+  position: absolute;
+  top: -50px;
+  left: 0px;
+
+  width: 100px;
+  height: 7px;
+
+  background-color: #ffffff;
+}
+
 .promo-slider-item .slide-counter {
   position: absolute;
-  top: -240px;
+  top: -90px;
   right: 48px;
 
   font-family: "Gilroy", "Arial", sans-serif;
@@ -525,8 +590,6 @@ input[type="radio"].visually-hidden {
   font-weight: 800;
 
   color: #ffffff;
-  background-color: gray; /*временно*/
-  display: none; /*временно*/
 }
 
 .promo-slider-item .slide-title {
@@ -574,28 +637,39 @@ input[type="radio"].visually-hidden {
 }
 
 .button-yellow {
+  display: block;
+  box-sizing: border-box;
+
+  width: 220px;
+
+  padding-top: 8px;
+  padding-bottom: 8px;
+
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
   text-transform: uppercase;
   text-align: center;
-  vertical-align: middle;
   letter-spacing: 3.6px;
 
   color: #000000;
-  background-color: #ffffff;
+  background-image: linear-gradient(transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
   border: none;
+
+  cursor: pointer;
 }
 
 .button-yellow:hover,
 .button-yellow:focus {
   color: #000000;
+  background-image: none;
   background-color: #f0c52e;
 }
 
 .button-yellow:active {
   color: rgba(0, 0, 0, 0.3);
+  background-image: none;
   background-color: #f0c52e;
 }
 
@@ -698,38 +772,107 @@ input[type="radio"].visually-hidden {
 
 .services-slider {
   margin-bottom: 94px;
+  padding-bottom: 90px;
   background-color: #e5e5e5;
 }
 
 .services-slider-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  position: relative;
 
   width: 1160px;
+
   margin-left: auto;
   margin-right: auto;
 }
 
 .services-slider-controls {
+  position: absolute;
+  top: -20px;
+  left: 0px;
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 
-  width: 278px;
+  width: 400px;
 }
 
-.services-slider-button:active {
-  color: #f7e184;
+.services-slider-controls::after {
+  content: "";
+
+  position: absolute;
+  top: -60px;
+  left: 278px;
+
+  width: 7px;
+  height: 320px;
+
   background-color: #000000;
 }
 
+.services-slider-button {
+  width: 278px;
+
+  text-align: left;
+
+  background-image: linear-gradient(transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
+}
+
+.services-slider-button.active {
+  color: #f7e184;
+  background-image: none;
+  background-color: #000000;
+}
+
+.services-slider-button:nth-child(1) {
+  padding-left: 23px;
+}
+
+.services-slider-button:nth-child(2) {
+  padding-left: 29px;
+}
+
+.services-slider-button:nth-child(3) {
+  padding-left: 37px;
+}
+
 .services-slider-list {
-  width: 760px;
   margin: 0;
   padding: 0;
+  padding-left: 400px;
 
   list-style: none;
+}
+
+.services-slider-item {
+  position: relative;
+  top: -28px;
+
+  display: none;
+
+  padding-bottom: 20px;
+}
+
+.services-slider-item-1 { 
+  display: block;
+}
+
+.services-slider-item-1 {
+  background-image: url("../img/slider-delivery.svg");
+  background-repeat: no-repeat;
+  background-position: 566px 12px;
+}
+
+.services-slider-item-2 {
+  background-image: url("../img/slider-guarantee.svg");
+  background-repeat: no-repeat;
+  background-position: 540px -12px;
+}
+
+.services-slider-item-3 {
+  background-image: url("../img/slider-credit.svg");
+  background-repeat: no-repeat;
+  background-position: 530px -10px;
 }
 
 .services-slider-item .slide-title {
@@ -801,7 +944,22 @@ input[type="radio"].visually-hidden {
 }
 
 .company-info {
+  position: relative;
+
   width: 560px;
+}
+
+.company-info::before {
+  content: "";
+
+  position: absolute;
+  top: -57px;
+  left: 0px;
+
+  width: 80px;
+  height: 7px;
+
+  background-color: #000000;
 }
 
 .company-info h2,
@@ -843,8 +1001,46 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.transport-list li {
+  position: relative;
+}
+
+.transport-list li::before {
+  content: "";
+
+  position: absolute;
+  top: 16px;
+  left: -40px;
+
+  width: 4px;
+  height: 4px;
+
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.button-yellow-company {
+  width: 260px;
+}
+
+
 .company-contact {
+  position: relative;
+
   width: 560px;
+}
+
+.company-contact::before {
+  content: "";
+
+  position: absolute;
+  top: -57px;
+  left: 0px;
+
+  width: 80px;
+  height: 7px;
+
+  background-color: #000000;
 }
 
 .company-contact p {
