@@ -655,7 +655,7 @@ input[type="radio"].visually-hidden {
 
   color: #000000;
   background-image: linear-gradient(transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
-  border: none;
+  border: 0;
 
   cursor: pointer;
 }
@@ -1765,13 +1765,26 @@ input[type="radio"].visually-hidden {
 
 /*--- Стилизация модальных окон ---*/
 
+.modal {
+  position: fixed;
+  z-index: 30;
+
+  display: none;
+
+  background-color: #ffffff;
+}
+
 .modal-message {
+  top: 10px;
+  left: 50%;
+
   box-sizing: border-box;
 
   width: 960px;
 
-  padding-top: 90px;
-  padding-bottom: 90px;
+  margin-left: -480px;
+  padding-top: 82px;
+  padding-bottom: 76px;
   padding-left: 100px;
   padding-right: 100px;
 
@@ -1782,6 +1795,12 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.modal-message-form p {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 36px;
 }
 
 .modal-message-form label {
@@ -1801,8 +1820,8 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   width: 360px;
   
-  padding-top: 18px;
-  padding-bottom: 20px;
+  padding-top: 16px;
+  padding-bottom: 17px;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -1844,7 +1863,85 @@ input[type="radio"].visually-hidden {
   color: #464646;
 }
 
+.modal-message-form input:hover,
+.modal-message-form textarea:hover {
+  background-color: #eaeaea;
+}
+
+.modal-message-form input:focus,
+.modal-message-form textarea:focus {
+  background-color: #ffffff;
+  border: 3px solid rgba(240, 197, 46, 0.5);
+  outline: none;
+}
+
+.button-message-form {
+  width: 200px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+
+  width: 55px;
+  height: 55px;
+
+  font-size: 0;
+
+  background-color: rgba(240, 197, 46, 0.5);
+  border: 0;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  top: 26px;
+  left: 13px;
+
+  width: 30px;
+  height: 2px;
+
+  background-color: #ffffff;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  background-color: rgba(240, 197, 46, 1);
+}
+
+.modal-close:active {
+  background-color: rgba(240, 197, 46, 0.3);
+}
+
 .modal-map {
+  top: 50%;
+  left: 50%;
+
+  box-sizing: border-box;
   width: 960px;
+  height: 559px;
+
+  margin-top: -280px;
+  margin-left: -480px;
+
+  background-color: #565656;
   box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
+}
+
+.modal-map p {
+  margin: 0;
 }
