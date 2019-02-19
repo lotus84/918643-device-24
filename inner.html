@@ -8,7 +8,7 @@
   </head>
   <body>
 
-    <header class="main-header">
+    <header class="main-header main-header-inner">
       <div class="main-header-top">
         <a class="main-header-logo" href="index.html">
           <img src="img/index-logo.svg" width="163" height="35" alt="Логотип интернет-магазина «DEVICE»">
@@ -79,8 +79,8 @@
               <li><a class="sort-popular" href="sort-popular.html">По популярности</a></li>
             </ul>
             <ul class="sort-updown">
-              <li><a class="sort-up sort-up-current">По возрастанию</a></li>
-              <li><a class="sort-down" href="sort-down.html">По убыванию</a></li>
+              <li><a class="sort-up" href="sort-up.html" aria-label="По возрастанию"></a></li>
+              <li><a class="sort-down sort-down-current" aria-label="По убыванию"></a></li>
             </ul>
           </section>
         </div>
@@ -140,54 +140,70 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button-yellow" type="submit">Показать</button>
+            <button class="button-yellow filter-form-button" type="submit">Показать</button>
           </form>
           <section class="catalog">
             <h2 class="visually-hidden">Список моноподов</h2>
             <ul class="catalog-list">
               <li class="catalog-item">
                 <div class="catalog-item-actions">
-                  <a class="button-yellow" href="cart.html">В корзину</a>
-                  <a class="button-compare" href="compare-list.html">Добавить к сравнению</a>
+                  <a class="button-yellow button-yellow-actions" href="cart.html">В корзину</a>
+                  <a class="button-compare-actions" href="compare-list.html">Добавить к сравнению</a>
                 </div>
                 <p class="item-image">
                   <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                 </p>
-                <h3><a class="item-title" href="catalog-item-1.html">Любительская селфи-палка</a></h3>
-                <span class="item-price">500 руб.</span>
+                <div class="item-title-wrapper">
+                  <h3>
+                    <a class="item-title" href="catalog-item-1.html">Любительская селфи-палка</a>
+                  </h3>
+                  <span class="item-price">500 руб.</span>
+                </div>
               </li>
               <li class="catalog-item">
                 <div class="catalog-item-actions">
-                  <a class="button-yellow" href="cart.html">В корзину</a>
-                  <a class="button-compare" href="compare-list.html">Добавить к сравнению</a>
+                  <a class="button-yellow button-yellow-actions" href="cart.html">В корзину</a>
+                  <a class="button-compare-actions" href="compare-list.html">Добавить к сравнению</a>
                 </div>
                 <p class="item-image">
                   <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка ">
                 </p>
-                <h3><a class="item-title" href="catalog-item-2.html">Профессиональная селфи-палка </a></h3>
-                <span class="item-price">1 500 руб.</span>
+                <div class="item-title-wrapper">
+                  <h3>
+                    <a class="item-title" href="catalog-item-2.html">Профессиональная селфи-палка</a>
+                  </h3>
+                  <span class="item-price">1 500 руб.</span>
+                </div>
               </li>
               <li class="catalog-item">
                 <div class="catalog-item-actions">
-                  <a class="button-yellow" href="cart.html">В корзину</a>
-                  <a class="button-compare" href="compare-list.html">Добавить к сравнению</a>
+                  <a class="button-yellow button-yellow-actions" href="cart.html">В корзину</a>
+                  <a class="button-compare-actions" href="compare-list.html">Добавить к сравнению</a>
                 </div>
                 <p class="item-image">
                   <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                 </p>
-                <h3><a class="item-title" href="catalog-item-3.html">Непотопляемая селфи-палка</a></h3>
-                <span class="item-price">2 500 руб.</span>
+                <div class="item-title-wrapper">
+                  <h3>
+                    <a class="item-title" href="catalog-item-3.html">Непотопляемая селфи-палка</a>
+                  </h3>
+                  <span class="item-price">2 500 руб.</span>
+                </div>
               </li>
               <li class="catalog-item catalog-item-new">
                 <div class="catalog-item-actions">
-                  <a class="button-yellow" href="cart.html">В корзину</a>
-                  <a class="button-compare" href="compare-list.html">Добавить к сравнению</a>
+                  <a class="button-yellow button-yellow-actions" href="cart.html">В корзину</a>
+                  <a class="button-compare-actions" href="compare-list.html">Добавить к сравнению</a>
                 </div>
                 <p class="item-image">
                   <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                 </p>
-                <h3><a class="item-title" href="catalog-item-4.html">Селфи-палка «Следуй за мной»</a></h3>
-                <span class="item-price">4 900 руб.</span>
+                <div class="item-title-wrapper">
+                  <h3>
+                    <a class="item-title" href="catalog-item-4.html">Селфи-палка «Следуй за мной»</a>
+                  </h3>
+                  <span class="item-price">4 900 руб.</span>
+                </div>
               </li>
             </ul>
             <ul class="pagination-list">
@@ -227,10 +243,10 @@
           <p class="main-footer-phone">Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
         </div>
         <div class="main-footer-bottom">
-          <ul class="main-footer-socials"><!--Текст внутри ссылок на соцсети временно (после стилизации удалю)-->
-            <li><a class="button-social button-social-fb" href="#" aria-label="Интернет-магазин «DEVICE» на Фейсбук">fb</a></li>
-            <li><a class="button-social button-social-ig" href="#" aria-label="Интернет-магазин «DEVICE» в Инстаграм">ig</a></li>
-            <li><a class="button-social button-social-tw" href="#" aria-label="Интернет-магазин «DEVICE» в Твиттер">tw</a></li>
+          <ul class="main-footer-socials">
+            <li><a class="button-social button-social-fb" href="#" aria-label="Интернет-магазин «DEVICE» на Фейсбук"></a></li>
+            <li><a class="button-social button-social-ig" href="#" aria-label="Интернет-магазин «DEVICE» в Инстаграм"></a></li>
+            <li><a class="button-social button-social-tw" href="#" aria-label="Интернет-магазин «DEVICE» в Твиттер"></a></li>
           </ul>
           <a class="logo-html-link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Логотип «HTML Academy»">
             <img src="img/logo-html.svg" width="27" height="35" alt="Логотип «HTML Academy»">
