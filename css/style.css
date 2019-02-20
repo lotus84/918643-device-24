@@ -2138,16 +2138,35 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-user-nav .user-account {
+  position: relative;
+
   display: block;
 
   margin-right: 20px;
+  padding-bottom: 14px;
   padding-left: 28px;
+}
+
+.footer-user-nav .user-account::before {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  left: 6px;
+
+  width: 13px;
+  height: 12px;
+
+  background-image: url("../img/icon-user-footer.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .footer-user-nav .logout-link {
   display: block;
 
   margin-right: 44px;
+  padding-bottom: 14px;
 
   color: rgba(255, 255, 255, 0.3);
 }
