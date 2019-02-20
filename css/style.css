@@ -1501,6 +1501,7 @@ input[type="radio"].visually-hidden {
 
   cursor: pointer;
   user-select: none;
+<<<<<<< HEAD
 }
 
 .filter-input-checkbox + label::before {
@@ -1575,6 +1576,8 @@ input[type="radio"].visually-hidden {
 .filter-input:active + label::before,
 .filter-input:checked:active + label::after {
   opacity: 1;
+=======
+>>>>>>> 83207ab0774221d49d722ba4711549d1f9ec2875
 }
 
 .filter-input:disabled + label {
