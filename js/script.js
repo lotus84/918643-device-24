@@ -1,7 +1,7 @@
 var messageLink = document.querySelector(".button-company-contact");
 var messagePopup = document.querySelector(".modal-message");
 var messageClose = messagePopup.querySelector(".modal-close");
-var messageForm = messagePopup.querySelector("form");
+var messageSubmit = messagePopup.querySelector(".button-message-form");
 var userName = messagePopup.querySelector("[name=user-name]");
 var userEmail = messagePopup.querySelector("[name=user-email]");
 var userMessage = messagePopup.querySelector("[name=user-message]");
@@ -21,7 +21,7 @@ messageClose.addEventListener("click", function (evt) {
   messagePopup.classList.remove("modal-error");
 })
 
-messageForm.addEventListener("submit", function (evt) {
+messageSubmit.addEventListener("click", function (evt) {
   if (!userName.value || !userEmail.value || !userMessage.value) {
     evt.preventDefault();
     messagePopup.classList.remove("modal-error");
