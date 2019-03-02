@@ -1744,6 +1744,7 @@ input[type="radio"].visually-hidden {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: middle;
 
   font-size: 14px;
   line-height: 24px;
