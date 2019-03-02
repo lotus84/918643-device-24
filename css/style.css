@@ -932,14 +932,21 @@ input[type="radio"].visually-hidden {
 
 .section-item-image img {
   position: absolute;
-  top: 50%;
+  top: 52%;
+  left: 52%;
+
+  -webkit-transform: translate(-52%, -52%);
+
+      -ms-transform: translate(-52%, -52%);
+
+          transform: translate(-52%, -52%);
+}
+
+.section-item-image-diff img {
+  position: absolute;
+  top: 41px;
   left: 50%;
-
-  -webkit-transform: translate(-50%, -50%);
-
-      -ms-transform: translate(-50%, -50%);
-
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
 }
 
 .section-item h3 {
