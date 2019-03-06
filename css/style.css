@@ -457,16 +457,17 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.site-nav-item {
+  margin-right: 28px;
+}
+
 .site-nav-item:first-child {
   margin-right: auto;
 }
 
-.site-nav-item:nth-child(2) {
-  margin-right: 28px;
-}
-
-.site-nav-item:nth-child(3) {
-  margin-right: 102px;
+.site-nav-item:last-child {
+  margin-left: 74px;
+  margin-right: 0;
 }
 
 .site-nav-item-dropdown {
@@ -479,7 +480,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 14px;
-  left: 238px;
+  right: 14px;
 
   width: 2px;
   height: 16px;
@@ -508,7 +509,7 @@ input[type="radio"].visually-hidden {
 
 .dropdown-submenu {
   position: absolute;
-  top: 50px;
+  top: 78%;
   left: -60px;
   z-index: 10;
 
@@ -674,20 +675,8 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
-.promo-slider-controls .active::after {
-  content: "";
-
-  position: absolute;
-  top: 6px;
-  left: 6px;
-
-  width: 3px;
-  height: 3px;
-  border: 1px solid #000000;
-  border-radius: 50%;
-}
-
-.promo-slider-controls .promo-slider-button:focus::after {
+.promo-slider-controls .active::after,
+.promo-slider-controls .promo-slider-button:active::after {
   content: "";
 
   position: absolute;
@@ -711,7 +700,7 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
-.promo-slider-item:nth-child(1) {
+.promo-slide-1 {
   display: block;
 }
 
@@ -730,7 +719,8 @@ input[type="radio"].visually-hidden {
 
 .promo-slider-image {
   position: relative;
-  top: -110px;
+  top: -75px;
+  left: -16px;
 
   margin: 0;
   padding: 0;
@@ -738,10 +728,15 @@ input[type="radio"].visually-hidden {
   width: 600px;
 }
 
+.promo-slide-3 .promo-slider-image {
+  top: -92px;
+}
+
 .promo-slider-image img {
   position: absolute;
-  left: 90px;
-  top: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .promo-slider-wrapper {
@@ -768,6 +763,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: -90px;
   right: 48px;
+  z-index: 1;
 
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 180px;
@@ -777,7 +773,18 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
+.promo-slide-2 .slide-counter {
+  right: 24px;
+}
+
+.promo-slide-3 .slide-counter {
+  right: 24px;
+}
+
 .promo-slider-item .slide-title {
+  position: relative;
+  z-index: 2;
+
   margin: 0;
   padding: 0;
 
@@ -789,16 +796,22 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.promo-slider-item .slide-title-first {
+.promo-slide-1 .slide-title {
   width: 394px;
 
   margin-bottom: 20px;
 }
 
-.promo-slider-item .slide-title-second {
+.promo-slide-2 .slide-title {
   width: 258px;
 
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.promo-slide-3 .slide-title {
+  width: 504px;
+
+  margin-bottom: 20px;
 }
 
 .promo-slider-item .slide-text {
@@ -809,15 +822,15 @@ input[type="radio"].visually-hidden {
   text-align: left;
 }
 
-.promo-slider-item .slide-text-first {
+.promo-slide-1 .slide-text {
   width: 480px;
 }
 
-.promo-slider-item .slide-text-second {
+.promo-slide-2 .slide-text {
   width: 440px;
 }
 
-.promo-slider-item .slide-text-third {
+.promo-slide-3 .slide-text {
   width: 450px;
 }
 
@@ -995,7 +1008,7 @@ input[type="radio"].visually-hidden {
 
 .services-slider {
   margin-bottom: 94px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   background-color: #e5e5e5;
 }
 
@@ -1099,33 +1112,34 @@ input[type="radio"].visually-hidden {
 
 .services-slider-item {
   position: relative;
-  top: -26px;
+  top: -76px;
 
   display: none;
 
+  padding-top: 50px;
   padding-bottom: 20px;
 }
 
-.services-slider-item-1 { 
+.services-slider-item-1 {
   display: block;
 }
 
 .services-slider-item-1 {
   background-image: url("../img/slider-delivery.svg");
   background-repeat: no-repeat;
-  background-position: 558px 12px;
+  background-position: 558px 62px;
 }
 
 .services-slider-item-2 {
   background-image: url("../img/slider-guarantee.svg");
   background-repeat: no-repeat;
-  background-position: 540px -12px;
+  background-position: 540px 38px;
 }
 
 .services-slider-item-3 {
   background-image: url("../img/slider-credit.svg");
   background-repeat: no-repeat;
-  background-position: 530px -10px;
+  background-position: 530px 36px;
 }
 
 .services-slider-item .slide-title {

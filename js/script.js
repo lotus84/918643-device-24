@@ -58,3 +58,66 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 })
+
+// --- Оживление сладеров ---
+
+var promoSlideIndex = 1;
+
+showPromoSlide(promoSlideIndex);
+
+function currentPromoSlide(n) {
+showPromoSlide(promoSlideIndex = n);
+}
+
+function showPromoSlide(n) {
+  var i;
+  var promoSlides = document.getElementsByClassName("promo-slider-item");
+  var promoButton = document.getElementsByClassName("promo-slider-button");
+
+  if (n > promoSlides.length) {
+    promoSlideIndex = 1
+  };
+  if (n < 1) {
+    promoSlideIndex = promoSlides.length
+  };
+  for (i = 0; i < promoSlides.length; i++) {
+    promoSlides[i].style.display = "none";
+  };
+  for (i = 0; i < promoButton.length; i++) {
+    promoButton[i].className = promoButton[i].className.replace(" active", "");
+  };
+  promoSlides[promoSlideIndex-1].style.display = "block";
+  promoButton[promoSlideIndex-1].className += " active";
+}
+
+
+
+
+var serviceSlideIndex = 1;
+
+showServiceSlide(serviceSlideIndex);
+
+function currentServiceSlide(n) {
+showServiceSlide(serviceSlideIndex = n);
+}
+
+function showServiceSlide(n) {
+  var i;
+  var serviceSlides = document.getElementsByClassName("services-slider-item");
+  var serviceButton = document.getElementsByClassName("services-slider-button");
+
+  if (n > serviceSlides.length) {
+    serviceSlideIndex = 1
+  };
+  if (n < 1) {
+    serviceSlideIndex = serviceSlides.length
+  };
+  for (i = 0; i < serviceSlides.length; i++) {
+    serviceSlides[i].style.display = "none";
+  };
+  for (i = 0; i < serviceButton.length; i++) {
+    serviceButton[i].className = serviceButton[i].className.replace(" active", "");
+  };
+  serviceSlides[serviceSlideIndex-1].style.display = "block";
+  serviceButton[serviceSlideIndex-1].className += " active";
+}
