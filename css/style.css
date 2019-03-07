@@ -2008,9 +2008,11 @@ input[type="radio"].visually-hidden {
 
   display: none;
 
+  box-sizing: border-box;
   width: 360px;
+  height: 381px;
   padding-top: 172px;
-  padding-bottom: 122px;
+  padding-bottom: 20px;
 
   background-color: rgba(238, 238, 238, 0.7);
 }
