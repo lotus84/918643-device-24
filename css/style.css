@@ -448,8 +448,11 @@ input[type="radio"].visually-hidden {
 }
 
 .site-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
@@ -491,7 +494,9 @@ input[type="radio"].visually-hidden {
 }
 
 .site-nav-item-dropdown::after {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .site-nav-link {
@@ -513,10 +518,14 @@ input[type="radio"].visually-hidden {
   left: -60px;
   z-index: 10;
 
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 
   margin: 0;
   padding: 0;
@@ -736,7 +745,9 @@ input[type="radio"].visually-hidden {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .promo-slider-wrapper {
@@ -798,19 +809,16 @@ input[type="radio"].visually-hidden {
 
 .promo-slide-1 .slide-title {
   width: 394px;
-
   margin-bottom: 20px;
 }
 
 .promo-slide-2 .slide-title {
   width: 258px;
-
   margin-bottom: 20px;
 }
 
 .promo-slide-3 .slide-title {
   width: 504px;
-
   margin-bottom: 20px;
 }
 
@@ -973,7 +981,9 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 41px;
   left: 50%;
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 
 .section-item h3 {
@@ -1156,10 +1166,9 @@ input[type="radio"].visually-hidden {
 }
 
 .services-slider-item .slide-text {
+  width: 426px;
   margin: 0;
   padding: 0;
-
-  width: 426px;
 }
 
 .popular-brands {
@@ -2008,7 +2017,9 @@ input[type="radio"].visually-hidden {
 
   display: none;
 
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+
   width: 360px;
   height: 381px;
   padding-top: 172px;
@@ -2300,7 +2311,9 @@ input[type="radio"].visually-hidden {
 .footer-top-wrapper .main-footer-compare {
   position: relative;
 
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+
   margin-right: 26px;
   padding-bottom: 10px;
   padding-left: 28px;
@@ -2325,7 +2338,9 @@ input[type="radio"].visually-hidden {
 .footer-top-wrapper .main-footer-cart {
   position: relative;
 
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+
   padding-bottom: 10px;
   padding-left: 28px;
   padding-right: 0;

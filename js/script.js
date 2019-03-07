@@ -59,7 +59,7 @@ window.addEventListener("keydown", function (evt) {
   }
 })
 
-// --- Оживление сладеров ---
+// --- Оживление promo-slider ---
 
 var promoSlideIndex = 1;
 
@@ -90,8 +90,7 @@ function showPromoSlide(n) {
   promoButton[promoSlideIndex-1].className += " active";
 }
 
-
-
+// --- Оживление services-slider ---
 
 var serviceSlideIndex = 1;
 
